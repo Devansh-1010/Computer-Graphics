@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="glMatrix-0.9.5.min.js"></script>
+    <script src="main.js"></script>
+    <title>Assignment 4</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #canvas {
+            margin: auto;
+        }
+        #lightPosLabel, #animateLabel {
+            font-size: x-large;
+            margin: 10px 0;
+        }
+        #lightPos {
+            width: 300px; /* Reduced the width of the slider */
+        }
+        #stopButton {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: large;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center; /* Center the label and slider vertically */
+        }
+        .slider-label {
+            margin-right: 10px; /* Space between label and slider */
+        }
+        .animation-controls {
+            display: flex;
+            align-items: center; /* Aligns items in the center vertically */
+            margin: 10px 0; /* Margin for spacing */
+        }
+        .animation-label {
+            margin-right: 10px; /* Space between label and button */
+        }
+    </style>
+</head>
+<body onload="webGLStart()">
+    <div id="container">
+        <canvas width="800" height="800" id="canvas"></canvas>
+        <div class="animation-controls">
+            <label class="animation-label" id="animateLabel">Start/Stop Animation:</label>
+            <button id="stopButton">Start</button>
+        </div>
+        <div class="slider-container">
+            <label class="slider-label" id="lightPosLabel">Light Position:</label>
+            <input type="range" name="lightPos" id="lightPos" min="-20" max="20">
+        </div>
+    </div>
+</body>
+</html>
