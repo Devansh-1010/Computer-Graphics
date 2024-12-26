@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="ans.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body onload="webGLStart();">
+    <div>
+      <h1>Assignment 2</h1>
+        <canvas
+        id="assn2"
+        style="border: none"
+        width="1600"
+        height="400"
+        >
+        </canvas>
+    </div>
+    <div style="text-align: center">
+      <h2 >Per-Face Shading</h2> 
+      <h2 >Gouraud Shading (Per-Vertex)</h2> 
+      <h2 >Phong Shading (Per-Fragment)</h2>
+    </div>
+    <br/>
+    <br/>
+    <div id="slider">
+        Control Light Position : 
+        <input type="range" class="slide"
+        id="light-slider" 
+        min="-12.0" 
+        max="16.0" 
+        step="1.0" 
+        value="3.0">
+        <br/>
+        Control Camera Zoom : <input type="range"  class="slide"
+        id="camera-slider" 
+        min="0.0" 
+        max="10.0" 
+        step="1.0" 
+        value="3.0">
+    </div>
+    <br/>
+  </body>
+</html>
