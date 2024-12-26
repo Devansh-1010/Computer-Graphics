@@ -1,0 +1,3 @@
+In this assignment, you will create a 3D animated scene that will showcase 3D texture mapping 
+on objects and cubemap environment reflection mapping on a teapot. You will also create a 
+skybox to give context to the objects in the scene, as shown in the image below.
