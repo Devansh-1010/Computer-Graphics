@@ -1,0 +1,3 @@
+In this assignment, you will implement shadow map algorithm using two pass rendering. This will use rasterization technique and NOT ray tracing. You 
+will use the glMatrix-0.9.5.min.js JavaScript matrix-vector manipulation library to perform 
+transformations using the APIs provided by it.
